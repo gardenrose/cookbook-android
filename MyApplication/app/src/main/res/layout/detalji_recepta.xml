@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#F5F5D5"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/loginDetaljiBtn"
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#9E1A0F"
+                    android:text="Prijava"
+                    android:textColor="#FDFCFC" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="354dp"
+                android:layout_height="229dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/naslovVieww"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="#050505"
+                android:textSize="34sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/kategorijaVieww"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/autorVieww"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:text="TextView" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="367dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/urediDetaljeBtn"
+                    android:layout_width="118dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#9E1A0F"
+                    android:text="uredi"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/ukloniDetaljiBtn"
+                    android:layout_width="118dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#9E1A0F"
+                    android:text="izbriši"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/ocijeniDetaljiBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:backgroundTint="#9E1A0F"
+                    android:text="ocijeni"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stepSize="1"
+                android:theme="@style/RatingBar"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/ocjenaInfoVieww"
+                android:layout_width="185dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/sastojciView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sastojci"
+                android:textColor="#050505"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/sastojciSadrzaj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/priprema"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Priprema"
+                android:textColor="#050505"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/pripremaSadrzaj"
+                android:layout_width="wrap_content"
+                android:layout_height="623dp"
+                android:text="TextView" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

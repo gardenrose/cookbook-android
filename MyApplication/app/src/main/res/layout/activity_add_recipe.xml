@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddRecipeActivity">
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1800dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/naslowTxt"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="Naslov recepta" />
+
+            <EditText
+                android:id="@+id/unosNovogNaslova"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:ems="10"
+                android:hint="Unesi naslov..."
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/kategorijaTxxt"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="Kategorija" />
+
+            <Spinner
+                android:id="@+id/spinnerKategorija"
+                android:layout_width="match_parent"
+                android:layout_height="66dp" />
+
+            <TextView
+                android:id="@+id/poveznicaTxt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Poveznica na sliku" />
+
+            <EditText
+                android:id="@+id/poveznicaEdit"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:ems="10"
+                android:hint="Poveznica..."
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/unosSastojakaTxt"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:text="Sastojci" />
+
+            <EditText
+                android:id="@+id/sastojciEdittxt"
+                android:layout_width="match_parent"
+                android:layout_height="196dp"
+                android:ems="10"
+                android:hint="Sastojci (300g i sl...)"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/pripremaTxxtView"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="Priprema" />
+
+            <EditText
+                android:id="@+id/pripremaEdittxxt"
+                android:layout_width="match_parent"
+                android:layout_height="251dp"
+                android:ems="10"
+                android:hint="Priprema (oguliti krompire... i sl)"
+                android:inputType="textMultiLine" />
+
+            <LinearLayout
+                android:layout_width="331dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/dodajButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#9E1A0F"
+                    android:text="DODAJ"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/otkazivanjeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#9E1A0F"
+                    android:text="OTKAŽI"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
